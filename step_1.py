@@ -4,6 +4,7 @@
 # класс учебной группы
 # * название
 # * студенты
+# * методы для добавления, удаления, и просмотра студента группы
 
 class Student:
 
@@ -12,12 +13,23 @@ class Student:
         self.dob = dob
         self.address = address
 
-    def display_info(self):
-        print('Студент: ', self.name)
-
 
 class Group:
 
     def __init__(self, name):
         self.name = name
-        self.student = Student
+        self.students = []
+
+    def __add__(self, other):
+        return Group(self.name)
+
+    def __del__(self):
+        return Group(self.name)
+
+
+student_1 = Student('Иван', '15.05.2005', 'ул.Ленина 113')
+student_2 = Student('Андрей', '21.07.2005', 'ул.Пушкина 102')
+
+group_1 = Group('ИСиП-33')
+group_1.__add__(student_1)
+group_1.__del__()
