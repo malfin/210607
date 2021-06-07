@@ -26,6 +26,9 @@ class Group:
     def __del__(self):
         return Group(self.name)
 
+    def views(self):
+        pass
+
 
 student_1 = Student('Иван', '15.05.2005', 'ул.Ленина 113')
 student_2 = Student('Андрей', '21.07.2005', 'ул.Пушкина 102')
