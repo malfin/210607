@@ -13,7 +13,7 @@ class Student:
         self.address = address
 
     def display_info(self):
-        print('Привет, ', self.name)
+        print('Студент: ', self.name)
 
 
 class Group:
