@@ -21,7 +21,7 @@ class Group:
         self.students = []
 
     def __new__(cls, *args, **kwargs):
-
+        inst = super().__new__(cls)
 
     def __del__(self):
         return Group(self.name)
