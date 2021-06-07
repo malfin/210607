@@ -20,8 +20,8 @@ class Group:
         self.name = name
         self.students = []
 
-    def __add__(self, other):
-        pass
+    def __new__(cls, *args, **kwargs):
+
 
     def __del__(self):
         return Group(self.name)
