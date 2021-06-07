@@ -1,19 +1,11 @@
 # имя
 # дата рождения
 # адрес
+# класс учебной группы
+# * название
+# * студенты
 
 class Student:
-    # name = 'Алексей'
-    #
-    # dob = '19.03.2002'
-    #
-    # address = 'ул. Ленина, 113'
-    #
-    # def display_info(self):
-    #     print('Привет, ', self.name)
-    #     print('Дата рождения:', self.dob)
-    #     print('Адрес: ', self.address)
-    #
 
     def __init__(self, name, dob, address):
         self.name = name
@@ -24,5 +16,8 @@ class Student:
         print('Привет, ', self.name)
 
 
-student_1 = Student('Алексей', '27.03.2002', 'ул. Ленина, 113')
-student_1.display_info()
+class Group:
+
+    def __init__(self, name):
+        self.name = name
+        self.student = Student
