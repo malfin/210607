@@ -21,7 +21,7 @@ class Group:
         self.students = []
 
     def __add__(self, other):
-        return Group(self.name)
+        pass
 
     def __del__(self):
         return Group(self.name)
